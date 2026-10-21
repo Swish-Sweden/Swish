@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Swish </title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#080a09;color:white;font-family:Arial,sans-serif}
+header{padding:25px;color:#36d984;font-size:25px;font-weight:bold}
+main{max-width:450px;margin:auto;padding:18px}
+.card{background:#141716;border:1px solid #292e2b;border-radius:22px;padding:22px;margin-bottom:18px}
+h2{font-size:21px}
+input{display:block;width:100%;padding:16px;margin-top:12px;background:#090b0a;border:1px solid #353b37;border-radius:12px;color:white;font-size:17px}
+button{width:100%;padding:17px;background:#0879f9;color:white;border:0;border-radius:18px;font-size:19px;font-weight:bold;cursor:pointer}
+.note{text-align:center;color:#a5afa8;font-size:12px;margin-top:16px}
+</style>
+</head>
+<body>
+<header> Swish </header>
+<main>
+<form action="success.html" method="GET">
+<section class="card">
+<h2>Mottagare</h2>
+<input name="phone" type="tel" placeholder="Telefonnummer"
+       required maxlength="20" autocomplete="off">
+</section>
+<section class="card">
+<h2>Belopp</h2>
+<input name="amount" type="number" placeholder="Belopp i kr"
+       min="1" max="10000" step="1" required>
+</section>
+<section class="card">
+<h2>Meddelande</h2>
+<input name="message" placeholder="Skriv ett meddelande"
+       maxlength="100">
+</section>
+<button type="submit">Visa swish-bekräftelse →</button>
+</form>
+<p class="note">DEMO · Pengaren kommer snart </p>
+</main>
+</body>
+</html>
